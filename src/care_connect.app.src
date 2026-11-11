@@ -1,0 +1,7 @@
+{application, care_connect,
+ [{description, "Privacy-first check-ins and family coordination"},
+  {vsn, "0.1.0"},
+  {registered, [care_connect_sup, care_connect_store, care_connect_checkins]},
+  {mod, {care_connect_app, []}},
+  {applications, [kernel, stdlib, cowboy]},
+  {env, [{port, 8080}]}]}.
